@@ -19,15 +19,6 @@
     <script src='jspsych-wjs-spring.js'></script>
     <script src='jspsych-instructions.js'></script>
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/7.13.2/firebase-app.js"></script>
-    <!-- Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/7.13.2/firebase-analytics.js"></script> <!-- Analytics -->
-    <script src="/__/firebase/7.13.2/firebase-auth.js"></script> <!-- Authentication -->
-    <script src="/__/firebase/7.13.2/firebase-database.js"></script> <!-- Realtime Database -->
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
   </head>
   
   <!--THE EXPERIMENT -->
@@ -44,7 +35,7 @@
     var blurEvent = false; // event occurs when task window out of focus
     
     // wjs_debug_log_flag = true;         // Log debug messages to the console.
-    // wjs_local_save_flag = true;        // Save data locally without connecting to Firebase.
+    wjs_local_save_flag = true;        // Save data locally without connecting to Firebase.
     // wjs_trial_preview_flag = false;     // Save the trial-list locally, with running experiment.
 
     // Define list of state names and create WJS state object.
@@ -98,12 +89,12 @@
       pages: [
       // '<img src = "images/demo/Slide1.png" width = "1000" heigth = "600">',
       // '<img src = "images/demo/Slide2.png" width = "1000" heigth = "600">',
-      '<img src = "../images/S1.jpg" width = "1000" heigth = "600">',
+      '<img src = "images/S1.jpg" width = "1000" heigth = "600">',
       // '<img src = "images/demo/Slide4.png" width = "1000" heigth = "600">',
       // '<img src = "images/demo/Slide5.png" width = "1000" heigth = "600">',
       // '<img src = "images/demo/Slide6.png" width = "1000" heigth = "600">',
-      '<img src = "../images/S2.jpg" width = "1000" heigth = "600">',
-      '<img src = "../images/S3.jpg" width = "1000" heigth = "600">',
+      '<img src = "images/S2.jpg" width = "1000" heigth = "600">',
+      '<img src = "images/S3.jpg" width = "1000" heigth = "600">',
       '<h3 align=center>Let us start with a guided demo.</h3>'],
       show_page_number: true,
       show_clickable_nav: true
